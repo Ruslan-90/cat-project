@@ -4,9 +4,16 @@
   display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .App__title {
@@ -29,7 +36,6 @@
   width: 320px;
   height: 510px;
   margin-right: 80px;
-  
 }
 
 .Card:last-child {
@@ -37,7 +43,8 @@
 }
 
 .Card__item {
-  clip-path: polygon(45px 0%, 100% 0%, 100% 100%, 0 100%, 0% 45px);
+  -webkit-clip-path: polygon(45px 0%, 100% 0%, 100% 100%, 0 100%, 0% 45px);
+          clip-path: polygon(45px 0%, 100% 0%, 100% 100%, 0 100%, 0% 45px);
   height: 480px;
   width: 100%;
   margin-bottom: 14px;
@@ -52,13 +59,12 @@
   height: 472px;
   background-color: white;
   position: absolute;
-  clip-path: polygon(45px 0%, 100% 0%, 100% 100%, 0 100%, 0% 45px);
+  -webkit-clip-path: polygon(45px 0%, 100% 0%, 100% 100%, 0 100%, 0% 45px);
+          clip-path: polygon(45px 0%, 100% 0%, 100% 100%, 0 100%, 0% 45px);
   border-radius: 12px;
   top: 4px;
   left: 4px;
 }
-
-
 
 .Card__item img {
   position: absolute;
@@ -70,7 +76,7 @@
 .Card__text {
   font-size: 13px;
   color: #FFFFFF;
-  text-align: center;  
+  text-align: center;
 }
 
 .Card__text span {
@@ -123,9 +129,16 @@
   display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .Card__weight p {
@@ -144,11 +157,11 @@
 }
 
 .bg-blue {
-  background-color:  #1698d9;
+  background-color: #1698d9;
 }
 
 .bg-pink {
-  background-color:  #d91667;
+  background-color: #d91667;
 }
 
 .bg-grey {
@@ -159,10 +172,11 @@
   content: "";
   width: 312px;
   height: 472px;
-  background-color: #f2f2f27c;;
+  background-color: #f2f2f27c;
   position: absolute;
   z-index: 200;
-  clip-path: polygon(45px 0%, 100% 0%, 100% 100%, 0 100%, 0% 45px);
+  -webkit-clip-path: polygon(45px 0%, 100% 0%, 100% 100%, 0 100%, 0% 45px);
+          clip-path: polygon(45px 0%, 100% 0%, 100% 100%, 0 100%, 0% 45px);
   border-radius: 12px;
   top: 4px;
   left: 4px;
@@ -177,15 +191,17 @@
   .Container {
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    align-content: space-evenly;
-    justify-content: space-around;
-    flex: 1 1;
+    -ms-flex-line-pack: space-evenly;
+        align-content: space-evenly;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1;
   }
-
   .Card {
     margin: 0 20px 20px;
   }
-
   .App {
     margin-top: 20px;
     height: 100%;
@@ -196,7 +212,6 @@
   .Card {
     margin: 0 0 20px;
   }
-
   .App__title {
     text-align: center;
   }
