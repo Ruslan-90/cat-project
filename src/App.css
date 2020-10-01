@@ -2,6 +2,8 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -19,6 +21,8 @@
 
 .Container {
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
 }
 
 .Card {
@@ -115,9 +119,10 @@
   position: absolute;
   bottom: 16px;
   right: 16px;
-  /* background-color: #1698d9; */
   z-index: 100;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -171,6 +176,7 @@
 @media only screen and (max-width: 1140px) {
   .Container {
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     align-content: space-evenly;
     justify-content: space-around;
     flex: 1 1;
